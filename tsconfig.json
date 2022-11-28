@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "ES2015",
     "moduleResolution": "node",
-    "target": "ES2017",
+    "target": "ES2020",
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -12,6 +12,18 @@
       "./types",
       "node_modules/axios",
       "node_modules/fetch"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "~/*": [
+        "./src/*"
+      ]
+    }
   }
 }
