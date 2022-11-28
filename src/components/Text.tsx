@@ -96,8 +96,8 @@ const Text: React.FC<any> = ({
         color: colors[color],
         fontFamily: families[family],
         fontSize: `${sizes[size]}px`,
-        fontWeight: `${weights[weight]}`,
-        lineHeight: lineHeights[lineHeight],// 1.5,
+        fontWeight: weights[weight],
+        lineHeight: lineHeights[lineHeight],
         whiteSpace: whiteSpaces[whiteSpace],
       }}
       { ...props }>
